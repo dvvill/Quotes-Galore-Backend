@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% for quote in quote_list %}
+    <div class="quote-entry">
+        <h2><a href="">{{ quote.title }}</a></h2>
+            <p>{{ quote.body }}</p>
+    </div>
+{% endfor %}
+{% endblock content %}
